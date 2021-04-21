@@ -38,3 +38,11 @@ executables:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
+
+  bot3:
+    main:                3.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
