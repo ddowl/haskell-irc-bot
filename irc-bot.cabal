@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 1da7807468fc5042c927bdfb24f18e8400a0c085a2adb72d2435249cca8826c4
+-- hash: 72c6314aca68e3845e8df615efd910ad79fd591dcc15e2e7e61e9df9bf17b8a4
 
 name:           irc-bot
 version:        0.1.0.0
@@ -70,4 +70,18 @@ executable bot4
       base >=4.7 && <5
     , mtl >=2.2 && <3
     , network >=3.1 && <5
+  default-language: Haskell2010
+
+executable bot5
+  main-is: 5.hs
+  other-modules:
+      Paths_irc_bot
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , mtl >=2.2 && <3
+    , network >=3.1 && <5
+    , time >=1.9 && <2
   default-language: Haskell2010
